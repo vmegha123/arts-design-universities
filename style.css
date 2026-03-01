@@ -93,3 +93,15 @@ nav a:hover::after {
   font-size: 22px;
   color: #5a3e36;
 }
+.ranking {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ranking span {
+  background-color: #d7b899;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-left: 5px;
+}
