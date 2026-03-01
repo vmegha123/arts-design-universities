@@ -1,0 +1,67 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f5efe6;
+  color: #3e2c23;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #4b2e2e;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #f5e6d3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d2b48c;
+}
+
+/* CONTAINER */
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* SECTION TITLE */
+.section-title {
+  border-bottom: 2px solid #c2a27c;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* IMAGE */
+.country-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* UNIVERSITY CARD */
+.university {
+  background-color: #fff8f0;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.university h3 {
+  margin-top: 0;
+  color: #5c3a2e;
+}
