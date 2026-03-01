@@ -1,7 +1,7 @@
 /* GENERAL */
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f3e9dc;
   color: #3e2c23;
   line-height: 1.6;
@@ -88,6 +88,7 @@ nav a:hover::after {
     text-transform: uppercase;
     color: #4a2c2a;
     margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 .subtitle {
