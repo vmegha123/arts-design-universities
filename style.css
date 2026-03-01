@@ -1,22 +1,26 @@
 /* GENERAL */
 body {
   margin: 0;
-  font-family: Georgia, serif;
-  background-color: #f5efe6;
+  font-family: 'Georgia', serif;
+  background-color: #f3e9dc;
   color: #3e2c23;
+  line-height: 1.6;
 }
 
 /* NAVIGATION */
 nav {
-  background-color: #4b2e2e;
-  padding: 15px 0;
+  background: linear-gradient(to right, #3e2723, #5d4037);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 35px;
   margin: 0;
   padding: 0;
 }
@@ -24,13 +28,31 @@ nav ul {
 nav a {
   color: #f5e6d3;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #d7b899;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-  color: #d2b48c;
+  color: #ffe0c2;
 }
 
+nav a:hover::after {
+  width: 100%;
+}
 /* CONTAINER */
 .container {
   width: 85%;
@@ -40,28 +62,34 @@ nav a:hover {
 
 /* SECTION TITLE */
 .section-title {
-  border-bottom: 2px solid #c2a27c;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
+  font-size: 32px;
+  border-left: 5px solid #c6a27e;
+  padding-left: 15px;
+  margin-bottom: 40px;
 }
 
 /* IMAGE */
 .country-image {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 40px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 /* UNIVERSITY CARD */
 .university {
-  background-color: #fff8f0;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  background: #fffaf5;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
-
+.university:hover {
+  transform: translateY(-5px);
+}
 .university h3 {
-  margin-top: 0;
-  color: #5c3a2e;
+   margin-top: 0;
+  font-size: 22px;
+  color: #5a3e36;
 }
